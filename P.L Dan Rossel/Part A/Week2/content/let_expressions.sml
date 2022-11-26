@@ -10,7 +10,7 @@ fun silly1 (z: int) =
 
     end
 
-val eval = silly3(3)
+val eval = silly1(3)
 (* 46 * 46 *)
 
 fun silly2 () =

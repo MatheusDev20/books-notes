@@ -1,7 +1,6 @@
 
 # Repositório para anotações e sample codes de Cursos e Livros
 ## SICP-Exercices
-Exercices and Code examples to follow along books and courses.
 Book: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/
 
 ## Fluent Python
