@@ -16,3 +16,36 @@ val d = TwoInts (3,5) : mytype
 val e = Str "hi" : mytype
  *)
 
+datatype suit = Club | Diamond | Heart | Spade
+datatype rank = Jack | Queen | King | Ace | Num of int
+
+
+val tst = Add(Constant(10 + 9), Negate (Constant 4))
+ 
+(* exp -> int *)
+fun eval(e: exp ) = 
+    case e of
+        Constant i => i
+        | Negate e2 => ~ (eval e2)
+        | Add (e1, e2) => (eval e1) + (eval e2)
+        | Multiply(e1, e2) => (eval e1 ) * (eval e2)
+
+
+(*  *)
+val constant_example = eval(Constant 5)
+val negate_example = eval(Negate(Constant 4))
+val sum_example = eval(Add(Constant 4, Constant 5))
+val multiply_example = eval(Multiply(Constant 4, Constant 5))
+ 
+
+datatype exp = Constant of int | Negate of exp | Add of exp * exp | Multiply of exp * exp
+
+fun max_constant e =
+    case e of
+        Constant i => i
+        | Negate e2 => max_constant e2
+        | Add(e1,e2) => Int.max(max_constant e1, max_constant e2 )
+        | Multiply(e1,e2) => Int.max(max_constant e1, max_constant e2 )
+
+val test_exp = Add(Constant 19, Negate (Constant 4))
+val nineteen = max_constant test_exp
