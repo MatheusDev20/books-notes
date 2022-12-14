@@ -5,6 +5,8 @@ fun append (xs, ys) =
         [] => ys
         | x::xs' => x :: append(xs', ys)
 
+(* Where x is the first element of the list and xs' is the tail of the list *)
+
 val result = append(["HI", "THERE", "IM"], ["Matheus", "De", "Paula"])
 val result = append([1,2,3], [1,2,3])
 
