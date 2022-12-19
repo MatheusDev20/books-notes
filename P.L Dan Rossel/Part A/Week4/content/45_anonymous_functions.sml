@@ -10,6 +10,7 @@ fun triple x = 3*x
 
 fun triple_n_times1 (n,x) = n_times(triple,n,x)
 
+
 fun triple_n_times2 (n,x) =
   let fun triple x = 3*x in n_times(triple,n,x) end
 
@@ -29,3 +30,5 @@ fun triple_n_times4 (n,x) = n_times((fn y => 3*y), n, x)
 (* because triple_n_times4 does not call itself, we could use a val-binding
    to define it, but the fun binding above is better style *)
 val triple_n_times5 = fn (n,x) => n_times((fn y => 3*y), n, x)
+
+

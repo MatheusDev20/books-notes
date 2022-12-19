@@ -57,4 +57,21 @@ fun append (xs) =
    case xs of
    [] =>
 
+(* Function to add an S to a given string *)
+fun add_an_S (s) =
+  s ^ "S"
+
+fun add_an_P (s) = 
+  s ^ "P"
+
+fun increment (s) =   
+  s + 1
+
+
+fun add_letter (f, str) = 
+  f(str)
+
+val x1 = add_letter(add_an_S, "ABX")
+val x2 = add_letter(add_an_P, "TPD")
+
 

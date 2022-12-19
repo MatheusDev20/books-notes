@@ -13,12 +13,14 @@ fun n_times (f,n,x) =
 
 fun increment x = x+1
 fun double x = x+x
+
 val x1 = n_times(double,4,7)       (* instantiates 'a with int *)
 val x2 = n_times(increment,4,7)    (* instantiates 'a with int *)
 val x3 = n_times(tl,2,[4,8,12,16]) (* instantiates 'a with int list *)
 
 (* higher-order functions are often polymorphic based on "whatever
 type of function is passed" but not always: *)
+
 fun times_until_zero (f,x) = 
     (* note: a better implementation would be tail-recursive *)
     if x=0 then 0 else 1 + times_until_zero(f, f x)
