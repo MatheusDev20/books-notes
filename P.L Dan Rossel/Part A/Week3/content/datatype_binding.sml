@@ -20,8 +20,7 @@ datatype suit = Club | Diamond | Heart | Spade
 datatype rank = Jack | Queen | King | Ace | Num of int
 
 
-val tst = Add(Constant(10 + 9), Negate (Constant 4))
- 
+
 (* exp -> int *)
 fun eval(e: exp ) = 
     case e of

@@ -17,7 +17,7 @@ fun nondecreasing = xs =
        [] => true
     | _::[] => true
     (* Where "head" mathces the first element of the list, "neck" the second and "rest" the tail of the list (from the 2th element) *)
-    | head::(neck::rest) => head < necl andalso nondecreasing(neck::rest)
+    | head:: (neck::rest) => head < neck andalso nondecreasing(neck::rest)
 
 
 datatype sgn = P | N | Z
