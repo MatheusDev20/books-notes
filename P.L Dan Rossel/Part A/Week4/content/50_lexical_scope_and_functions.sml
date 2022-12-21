@@ -9,8 +9,9 @@ fun f y =
     in
         fn z => x + y  + z
     end
-val x = 3
-val g = f 4 
+
+val x = 3 (* irrelevant because the defintion of the function "g" will look up the enviroment of the let expression if the function "f" *)
+val g = f 4
 val y = 5
 val z = g 6
 
@@ -21,6 +22,9 @@ fun f g =
     in
         g 2
     end
+
 val x = 4
+
 fun h y = x + y 
+
 val z = f h

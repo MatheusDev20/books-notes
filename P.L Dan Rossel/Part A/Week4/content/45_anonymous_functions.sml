@@ -31,4 +31,10 @@ fun triple_n_times4 (n,x) = n_times((fn y => 3*y), n, x)
    to define it, but the fun binding above is better style *)
 val triple_n_times5 = fn (n,x) => n_times((fn y => 3*y), n, x)
 
+(* Function to add an S to a given string ( Anonymus version ) *)
 
+fun add_letter (f, str) = 
+  f(str)
+
+val x1 = add_letter(fn x => x + 1, 1)
+val x2 = add_letter(fn x => x ^ "P", "TPD")

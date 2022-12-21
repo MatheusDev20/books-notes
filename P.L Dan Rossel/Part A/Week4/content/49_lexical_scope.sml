@@ -11,3 +11,9 @@
 
 (* 5 *) val z = f (x + y)
 
+(* In this example, the function "f" adds always 1 to y, because when it was defined the value of x in the enviroment was 1 *)
+
+(* Wherever a function is called, the value of body will look up in the the enviroment where the function was created (x = 1) *)
+
+(* This is what a closure is, a pair of a (body, enviroment) that is created when the function is defined *)
+
