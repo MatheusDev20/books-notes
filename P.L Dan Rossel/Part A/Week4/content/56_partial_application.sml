@@ -25,8 +25,9 @@ fun sum_inferior xs = fold (fn (x,y) => x+y) 0 xs
 (* another example *)
 
 fun range i j = if i > j then [] else i :: range (i+1) j
-
+val t1 = range 1 3
 val countup  = range 1
+val t2 = countup 5
 
 fun countup_inferior x = range 1 x
 
