@@ -81,6 +81,12 @@ val longest_capitalized = longest_string3 o only_capitals
 val result = longest_capitalized ["ABC", "eFFWEWG", "tFGWGWEGWgrege", "WFGWGWEG2"]
 
 
+(* 6 *)
+(* NATAL -> LATAN *)
+fun reverse_string s = String.implode o rev o String.explode
+val t1 = reverse_string "NATAL"
+
+
 
  
 
