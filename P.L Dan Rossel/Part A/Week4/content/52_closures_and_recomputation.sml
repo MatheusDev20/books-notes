@@ -4,7 +4,7 @@
 fun filter (f,xs) =
     case xs of
 	[] => []
-      | x::xs' => if f x then x::(filter(f,xs')) else filter(f,xs')
+    | x::xs' => if f x then x::(filter(f,xs')) else filter(f,xs')
 
 fun allShorterThan1 (xs,s) = 
     filter (fn x => String.size x < (print "!"; String.size s), xs)

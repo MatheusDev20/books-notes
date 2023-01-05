@@ -1,0 +1,13 @@
+-> Pattern Matching
+
+-> Closures
+
+-> High order functions
+
+-> Mutation
+
+-> Recursion
+
+-> Type inference
+
+

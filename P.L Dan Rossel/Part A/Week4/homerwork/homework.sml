@@ -15,7 +15,7 @@ datatype valu = Const of int
 	      | Constructor of string * valu
 
 fun g f1 f2 p =
-    let 
+    let
 	val r = g f1 f2 
     in
 	case p of
