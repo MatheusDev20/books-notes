@@ -17,6 +17,7 @@
   (lambda (x)
     (* x (* x x))))
 
+
 ; many functions, such as *, take a variable number of arguments
 (define cube2
   (lambda (x)

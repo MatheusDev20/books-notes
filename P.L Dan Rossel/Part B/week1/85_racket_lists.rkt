@@ -7,9 +7,10 @@
 ; not needed here, but a workaround so we could write tests in a second file
 ; see getting-started-with-Racket instructions for more explanation
 (provide (all-defined-out))
-
+ 
 ; list processing: null, cons, null?, car, cdr
 ; we won't use pattern-matching in Racket
+
 (define (sum xs)
   (if (null? xs)
       0
