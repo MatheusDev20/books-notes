@@ -9,6 +9,7 @@ const filtered = arr.filter(greaterThanX(6), arr)
 
 // X esta na Closure criada no momento da definição da função inner, por isso pode ser acessada mesmo quando
 // a execução de outter já acabou
+
 function outter() {
     const x = 3  
     function inner() {

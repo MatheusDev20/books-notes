@@ -32,6 +32,7 @@
 ;(my-mult 1 (let ([x (slow-add 3 4)]) (lambda () x)))
 ;(my-mult 2 (let ([x (slow-add 3 4)]) (lambda () x)))
 
+
 (define (my-delay th) 
   (mcons #f th)) ;; a one-of "type" we will update /in place/
 
