@@ -31,4 +31,5 @@ const findMax = arr => {
       : findMax(tail)
   }
 
-console.log(findMax(l))
+true.name = 'Matheus';
+console.log(true.name);
