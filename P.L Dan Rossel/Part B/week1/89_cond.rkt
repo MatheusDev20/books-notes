@@ -24,3 +24,4 @@
   (cond [(null? xs) 0]
         [(car xs) (count-falses (cdr xs))] ; (car xs) can have any type
         [#t (+ 1 (count-falses (cdr xs)))]))
+

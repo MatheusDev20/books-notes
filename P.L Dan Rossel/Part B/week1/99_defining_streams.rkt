@@ -26,6 +26,7 @@
   (letrec ([f (lambda (x) 
                 (cons x (lambda () (f (fn x arg)))))])
     (lambda () (f arg))))
+
 (define nats2  (stream-maker + 1))
 (define powers2 (stream-maker * 2))
 

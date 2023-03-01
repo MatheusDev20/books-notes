@@ -6,19 +6,6 @@
 
 ; not needed here, but a workaround so we could write tests in a second file
 ; see getting-started-with-Racket instructions for more explanationfile:///home/matheus/projects/haf-frontend/assets
-file:///home/matheus/projects/haf-frontend/node_modules
-file:///home/matheus/projects/haf-frontend/src
-file:///home/matheus/projects/haf-frontend/index.html
-file:///home/matheus/projects/haf-frontend/package.json
-file:///home/matheus/projects/haf-frontend/package-lock.json
-file:///home/matheus/projects/haf-frontend/Readme.md
-file:///home/matheus/projects/haf-frontend/Todo.txt
-file:///home/matheus/projects/haf-frontend/tsconfig.json
-file:///home/matheus/projects/haf-frontend/tsconfig.node.json
-file:///home/matheus/projects/haf-frontend/vercel.json
-file:///home/matheus/projects/haf-frontend/vite.config.ts
-file:///home/matheus/projects/haf-frontend/yarn.lock
-file:///home/matheus/projects/haf-frontend/yarn-error.log
 
 (provide (all-defined-out))
  
