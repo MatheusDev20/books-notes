@@ -26,7 +26,7 @@ Also, build a list with cons cells.
 Using the parenteses syntax and the prefix notation is so much easier to parse the program ( the characters ) to a three data structure
 
 ```scheme 
-(define cube (lambda (x) (* x x x) ) 
+(define cube (lambda (x) (* x x x) ))
 ``` 
 Like this expression turn into to a three where "x" and "x x x" are atoms or "leaves" of this three.
 

@@ -3,6 +3,10 @@
 
 3.times { puts "hello" }
 
+
+# A Block is a Anonymus function, that is called like a High Order function.
+# It can be used with built in methods from Array class like that.
+
 [4,6,8].each { puts "hi" }
 
 i = 7
@@ -25,6 +29,5 @@ def t i
     print "\n"
   end
 end
-
 t 9
 
