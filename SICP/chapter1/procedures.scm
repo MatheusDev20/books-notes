@@ -9,6 +9,8 @@
 (sum-squares 3 5) -> 34
 
 (define (f a ) (sum-squares ( + a 1) (* a 2)))
+
+
 f( 5 ) proccess of evaluation -> applicative-order evaluation
 (sum-of-squares (+ 5 1) (* 5 2))
 (+ (square 6) (square 10))

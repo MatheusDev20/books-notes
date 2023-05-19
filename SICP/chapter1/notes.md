@@ -54,6 +54,12 @@ the process to evaluate it is recursive, because the interperter has to evaluate
 we can represent this process in a figure of a tree.
 
 ## 1.1.4 Compound procedures.
+The idea of functions, create procedures and assign them a symbols, with formal paramaeters and a body, that yield the value when the procedure is evaluated.
+```
+    (define (square x ) ( * x x)) # compound procedure
+```
+Procedure application via => Substitution Model -> Idea of replace the formal parameters of a procedure in the body and evaluate this body.
+The process will b applied at each inner compound procedure in the body of outter procedure.
 
 
 
