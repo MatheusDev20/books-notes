@@ -62,6 +62,25 @@ Procedure application via => Substitution Model -> Idea of replace the formal pa
 The process will b applied at each inner compound procedure in the body of outter procedure.
 
 
+### Application order (Eager evaluation) vs Normal Order (Lazy Evaluation)
+
+Eager evaluation, the interpreter first evaluate the arguments of a procedure, and apply the operator (with can be other procedure)
+```
+    (+ (square 6) (square 10)) The arguments of the leftmost operator "+" are primarily evaluated.
+
+    (+ (* 6 6) (* 10 10))
+```
+In contrast, lazy evaluation only evaluate the arguments when they are actually needed.
+
+
+## 1.1.6 Conditional Expressions
+
+(if ⟨predicate⟩ ⟨consequent⟩ ⟨alternative⟩)
+The interpreter starts evaluating the predicate witch can be true or false, based on that it will evaluate the consequent or the alternative
+```
+    (if (> 3 5) 0 5) # it will always return the alternative cause the predicate always evaluate to false
+```
+
 
 
 
